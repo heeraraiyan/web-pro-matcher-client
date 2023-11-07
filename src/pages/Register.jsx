@@ -63,7 +63,7 @@ const Register = () => {
         <div className="bg-gradient-to-r from-cyan-400 to-sky-800">
             <Navbar></Navbar>
             <h1 className="text-5xl font-bold text-sky-900 italic text-center mt-8">Register now!</h1>
-       <div className="flex items-center justify-center">
+       <div className="md:flex items-center justify-center">
         <div className="ml-20">
             <img src="https://i.ibb.co/rGc9JLm/shape-scene-woman-working-1.png" alt="" />
         </div>

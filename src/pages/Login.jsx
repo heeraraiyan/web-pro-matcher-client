@@ -52,7 +52,7 @@ const Login = () => {
             <Navbar></Navbar>
 
             <h1 className="text-5xl font-bold text-sky-900 italic text-center mt-8">Login now!</h1>
-              <div className="flex items-center justify-center">
+              <div className="md:flex items-center justify-center">
                 <div className="ml-20">
                     {/* <img src="https://i.ibb.co/ThRJc9F/273-2738804-php-login-and-authentication-login-hd-png-download.png" alt="" /> */}
                     <img src="https://i.ibb.co/jyZsS6M/image-login.png" alt="" />
