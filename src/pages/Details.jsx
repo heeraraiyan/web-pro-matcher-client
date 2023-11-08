@@ -3,6 +3,7 @@ import { Link, useLoaderData } from "react-router-dom";
 import { AuthContext } from "../provider/AuthProvider";
 import Navbar from "../components/Navbar";
 import Swal from "sweetalert2";
+import Footer from "../components/Footer";
 
 
 
@@ -47,7 +48,7 @@ const Details = () => {
     return (
         <div className="  bg-slate-600">
             <Navbar></Navbar>
-            <div className="flex items-center justify-center mt-8 pb-5">
+            <div className="flex items-center justify-center mt-8 pb-8">
 
             <div className="card w-2/5 bg-sky-950 shadow-xl">
              {/* <figure><img className="h-[350px] mt-4" src={image} alt="Shoes" /></figure> */}
@@ -63,6 +64,7 @@ const Details = () => {
              </div>
                    </div>
             </div>
+            <Footer></Footer>
         </div>
     );
 };
