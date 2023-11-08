@@ -45,7 +45,7 @@ const AllJobs = () => {
                 
 
                 {filteredJobs.map((job) => (
-                    <div key={job._id} className="job-card  bg-sky-700 text-slate-100 font-bold h-[250px] w-[500px] text-center">
+                    <div key={job._id} className="job-card  bg-sky-700 text-slate-100 font-bold h-[250px] lg:w-[500px] text-center">
                         <h3 className="pt-8">{job.job_title}</h3>
                         <p>Category: {job.category}</p>
                         <p>Deadline: {job.deadline}</p>
