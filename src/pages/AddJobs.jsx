@@ -1,5 +1,6 @@
 import Swal from 'sweetalert2'
 import Navbar from '../components/Navbar';
+import Footer from '../components/Footer';
 
 const AddJobs = () => {
     const handleAddjobs = event => {
@@ -45,7 +46,7 @@ const AddJobs = () => {
       }
     
         return (
-            <div className="bg-gradient-to-r from-cyan-400 to-sky-800">
+            <div className="bg-gradient-to-r from-cyan-100 to-sky-300">
                 <Navbar></Navbar>
                 <h2 className="text-3xl text-orange-700 font-bold mt-10 text-center">ADD JOBS <br></br><span className="italic text-xl text-amber-600">HERE</span> </h2>
                 <div className="pb-32 mt-10 w-11/12 mx-auto">
@@ -101,6 +102,7 @@ const AddJobs = () => {
               
                 </form>
                 </div>
+                <Footer></Footer>
                 
             </div>
         );

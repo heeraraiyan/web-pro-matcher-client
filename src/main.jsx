@@ -16,6 +16,7 @@ import ErrorPage from './pages/ErrorPage.jsx';
 import MyBids from './pages/MyBids.jsx';
 
 import AllJobs from './pages/AllJobs.jsx';
+import Details from './pages/Details.jsx';
 
 
 
@@ -55,6 +56,12 @@ const router = createBrowserRouter([
         path: '/alljobs',
         element: <AllJobs></AllJobs>,
         loader: () =>fetch('http://localhost:5000/addJobs')
+        
+      },
+      {
+        path: '/details/:id',
+        element: <Details></Details>,
+        loader: ({params}) =>fetch(`http://localhost:5000/addJobs/${params.id}`)
         
       }
       
