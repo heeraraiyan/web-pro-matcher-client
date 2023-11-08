@@ -36,6 +36,7 @@ const MyBids = () => {
                       <td>{bid.job_title}</td>
                       <td>{bid.price_range}</td>
                       <td>{bid.deadline}</td>
+                      <td><button className="btn btn-info">complete</button></td>
                     </tr>
                    
                     

@@ -22,7 +22,7 @@ const Categories = () => {
     <TabList >
       <Tab >Web Development</Tab>
       <Tab>Digital Marketing</Tab>
-      <Tab>Grapics Design</Tab>
+      <Tab>Grapic Design</Tab>
     </TabList>
     
     <TabPanel>

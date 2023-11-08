@@ -1,9 +1,36 @@
+import { useContext } from "react";
+import { useLoaderData } from "react-router-dom";
+import { AuthContext } from "../provider/AuthProvider";
+import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
 
 
 const MyPostedJobs = () => {
+    const { user } = useContext(AuthContext);
+    const userEmail = user.email;
+
+    const jobs = useLoaderData();
+
+    // const userJobs = jobs.filter((job) => job.email === userEmail);
+    
+
     return (
         <div>
-            <h1>my posted jobs</h1>
+            <Navbar></Navbar>
+
+            <div className="max-w-5xl mx-auto grid lg:grid-cols-2 gap-4 py-20 ">
+          {jobs.map((job) => (
+            <div key={job._id} className="job-card  bg-sky-700 text-slate-100 font-bold h-[250px] w-[500px] text-center">
+              <h3 className="pt-8">{job.job_title}</h3>
+              <p>Category: {job.category}</p>
+              <p>Deadline: {job.deadline}</p>
+              <p>Price Range: {job.price_range}</p>
+              <p>Description: {job.short_description}</p>
+              
+            </div>
+          ))}
+        </div>
+        <Footer></Footer>
         </div>
     );
 };
