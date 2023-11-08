@@ -1,8 +1,17 @@
-# React + Vite
+# Web Pro Matcher - Client-Side
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Web Pro Matcher is a web application that connects job seekers and employers in the fields of Web Development, Digital Marketing, and Graphics Design. This client-side repository contains the front-end code for the application.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Category-based Job Listings:** Users can explore job listings in three categories: Web Development, Digital Marketing, and Graphics Design.
+
+- **Category Selection:** A user-friendly interface allows users to select a category to view job listings from that specific field.
+
+- **Job Details:** Clicking on a job listing reveals detailed information about the job, including its title, category, deadline, price range, and a short description.
+
+- **Bid on Jobs:** Users can express interest in a job by clicking a "Bid Now" button, which redirects them to a page to submit their bids.
+
+- **Responsive Design:** The web application is designed to work on various devices, ensuring a seamless user experience.
+
+
