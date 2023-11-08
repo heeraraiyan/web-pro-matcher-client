@@ -11,6 +11,11 @@ import AuthProvider from './provider/AuthProvider.jsx';
 import AddJobs from './pages/AddJobs.jsx';
 import Register from './pages/Register.jsx';
 import Login from './pages/Login.jsx';
+import MyPostedJobs from './pages/MyPostedJobs.jsx';
+import ErrorPage from './pages/ErrorPage.jsx';
+import MyBids from './pages/MyBids.jsx';
+
+import AllJobs from './pages/AllJobs.jsx';
 
 
 
@@ -18,6 +23,7 @@ const router = createBrowserRouter([
   {
     path: "/",
     element: <App></App>,
+    errorElement: <ErrorPage></ErrorPage>,
     children: [
       {
         path: '/',
@@ -35,7 +41,23 @@ const router = createBrowserRouter([
       {
         path: '/login',
         element: <Login></Login>
+      },
+      {
+        path:'/mypostedjobs',
+        element: <MyPostedJobs></MyPostedJobs>
+
+      },
+      {
+        path: '/mybids',
+        element: <MyBids></MyBids>
+      },
+      {
+        path: '/alljobs',
+        element: <AllJobs></AllJobs>,
+        loader: () =>fetch('http://localhost:5000/addJobs')
+        
       }
+      
     ]
   },
 ]);

@@ -4,6 +4,7 @@ import Navbar from "../components/Navbar";
 
 
 
+
 const Home = () => {
     return (
         <div>
@@ -16,6 +17,8 @@ const Home = () => {
         </div>
 
         <Categories></Categories>
+
+        
         </div>
     );
 };
