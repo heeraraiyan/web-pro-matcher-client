@@ -1,6 +1,8 @@
 import Banner from "../components/Banner";
 import Categories from "../components/Categories";
+import Latest from "../components/Latest";
 import Navbar from "../components/Navbar";
+import WhyUs from "../components/WhyUs";
 
 
 
@@ -17,6 +19,8 @@ const Home = () => {
         </div>
 
         <Categories></Categories>
+        <WhyUs></WhyUs>
+        <Latest></Latest>
 
         
         </div>
