@@ -17,6 +17,7 @@ import MyBids from './pages/MyBids.jsx';
 
 import AllJobs from './pages/AllJobs.jsx';
 import Details from './pages/Details.jsx';
+import UpdateJob from './pages/UpdateJob.jsx';
 
 
 
@@ -66,6 +67,12 @@ const router = createBrowserRouter([
         element: <Details></Details>,
         loader: ({params}) =>fetch(`http://localhost:5000/addJobs/${params.id}`)
         
+      },
+      {
+        path: '/updatejob',
+        element:<UpdateJob></UpdateJob>,
+        loader: ({params}) =>fetch(`http://localhost:5000/addJobs/${params.id}`)
+
       }
       
     ]

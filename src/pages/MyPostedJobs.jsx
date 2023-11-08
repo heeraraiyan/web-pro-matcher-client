@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import { useLoaderData } from "react-router-dom";
+import { Link, useLoaderData } from "react-router-dom";
 import { AuthContext } from "../provider/AuthProvider";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
@@ -26,6 +26,7 @@ const MyPostedJobs = () => {
               <p>Deadline: {job.deadline}</p>
               <p>Price Range: {job.price_range}</p>
               <p>Description: {job.short_description}</p>
+              <Link to={`/updatejob/${job._id}`}><button className="btn btn-info">Update</button></Link>
               
             </div>
           ))}
