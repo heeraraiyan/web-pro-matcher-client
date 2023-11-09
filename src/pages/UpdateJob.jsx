@@ -51,7 +51,7 @@ const UpdateJob = () => {
     return (
         <div className="bg-gradient-to-r from-cyan-100 to-sky-300">
         <Navbar></Navbar>
-        <h2 className="text-3xl text-orange-700 font-bold mt-10 text-center">ADD JOBS <br></br><span className="italic text-xl text-amber-600">HERE</span> </h2>
+        <h2 className="text-3xl text-orange-700 font-bold mt-10 text-center">UPDATE JOBS <br></br><span className="italic text-xl text-amber-600">HERE</span> </h2>
         <div className="pb-32 mt-10 w-11/12 mx-auto">
          
         <form onSubmit={handleUpdatejobs}>
