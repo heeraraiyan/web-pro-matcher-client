@@ -15,7 +15,7 @@ const Details = () => {
         // console.log(userCart)
 
         
-    fetch('http://localhost:5000/bid',{
+    fetch('https://web-pro-matcher-server.vercel.app/bid',{
         method: 'POST',
         headers:{
           'content-type' :'application/json'

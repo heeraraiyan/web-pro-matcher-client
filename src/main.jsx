@@ -47,31 +47,31 @@ const router = createBrowserRouter([
       {
         path:'/mypostedjobs',
         element: <MyPostedJobs></MyPostedJobs>,
-        loader: () =>fetch('http://localhost:5000/addJobs_own')
+        loader: () =>fetch('https://web-pro-matcher-server.vercel.app/addJobs_own')
 
       },
       {
         path: '/mybids',
         element: <MyBids></MyBids>,
-        loader: () =>fetch ('http://localhost:5000/bid')
+        loader: () =>fetch ('https://web-pro-matcher-server.vercel.app/bid')
         
       },
       {
         path: '/alljobs',
         element: <AllJobs></AllJobs>,
-        loader: () =>fetch('http://localhost:5000/addJobs')
+        loader: () =>fetch('https://web-pro-matcher-server.vercel.app/addJobs')
         
       },
       {
         path: '/details/:id',
         element: <Details></Details>,
-        loader: ({params}) =>fetch(`http://localhost:5000/addJobs/${params.id}`)
+        loader: ({params}) =>fetch(`https://web-pro-matcher-server.vercel.app/addJobs/${params.id}`)
         
       },
       {
-        path: '/updatejob',
+        path: '/updatejob/:id',
         element:<UpdateJob></UpdateJob>,
-        loader: ({params}) =>fetch(`http://localhost:5000/addJobs/${params.id}`)
+        loader: ({params}) =>fetch(`https://web-pro-matcher-server.vercel.app/addJobs/${params.id}`)
 
       }
       

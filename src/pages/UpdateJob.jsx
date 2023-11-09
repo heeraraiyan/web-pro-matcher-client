@@ -25,7 +25,7 @@ const UpdateJob = () => {
     
         // send to server 
     
-        fetch(`http://localhost:5000/addJobs/${_id}`,{
+        fetch(`https://web-pro-matcher-server.vercel.app/addJobs/${_id}`,{
           method: 'PUT',
           headers:{
             'content-type' :'application/json'
