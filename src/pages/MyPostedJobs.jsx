@@ -15,7 +15,7 @@ const MyPostedJobs = () => {
     
 
     return (
-        <div>
+        <div className="bg-gradient-to-r from-cyan-100 to-sky-300">
             <Navbar></Navbar>
 
             <div className="max-w-5xl mx-auto grid lg:grid-cols-2 gap-4 py-20 ">

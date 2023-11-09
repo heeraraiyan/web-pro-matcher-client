@@ -6,9 +6,9 @@ const Latest = () => {
             <h1 className="text-xl text-amber-800 text-center font-bold pt-8">Top Requirements for</h1>
             <h1 className="text-5xl text-slate-600 text-center font-bold pt-4 pb-12">Job success!</h1>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 w-11/12 mx-auto gap-4">
-            <div className="card w-96 bg-base-100 shadow-xl">
-  <figure><img src="https://i.ibb.co/tDnctLn/pexels-yan-krukau-7793691.jpg" alt="" /></figure>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 w-11/12 mx-auto lg:pl-10 gap-4">
+            <div className="card md:w-96 bg-base-100 shadow-xl">
+  <figure><img className="h-[350px]" src="https://i.ibb.co/tDnctLn/pexels-yan-krukau-7793691.jpg" alt="" /></figure>
   <div className="card-body">
     <h2 className="card-title">
       Web Development
@@ -24,8 +24,8 @@ const Latest = () => {
   </div>
 </div>
 
-<div className="card w-96 bg-base-100 shadow-xl">
-  <figure><img src="https://i.ibb.co/Z28RmK4/pexels-anna-nekrashevich-6801633.jpg" alt="" /></figure>
+<div className="card md:w-96 bg-base-100 shadow-xl">
+  <figure><img className="h-[350px]" src="https://i.ibb.co/hghWxPY/pexels-alena-darmel-7710118.jpg" alt="" /></figure>
   <div className="card-body">
     <h2 className="card-title">
       Digital Marketing
@@ -47,8 +47,8 @@ The Unusual!</p>
 
 
 
-<div className="card w-96 bg-base-100 shadow-xl">
-  <figure><img src="https://i.ibb.co/B32wmnS/pexels-kampus-production-5940841.jpg" alt="" /></figure>
+<div className="card md:w-96 bg-base-100 shadow-xl">
+  <figure><img className="h-[350px]" src="https://i.ibb.co/B32wmnS/pexels-kampus-production-5940841.jpg" alt="" /></figure>
   <div className="card-body">
     <h2 className="card-title">
     Graphics Design
