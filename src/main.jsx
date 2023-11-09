@@ -18,6 +18,7 @@ import MyBids from './pages/MyBids.jsx';
 import AllJobs from './pages/AllJobs.jsx';
 import Details from './pages/Details.jsx';
 import UpdateJob from './pages/UpdateJob.jsx';
+import PrivateRoute from './pages/PrivateRoute.jsx';
 
 
 
@@ -33,7 +34,7 @@ const router = createBrowserRouter([
       },
       {
         path: '/addJobs',
-        element: <AddJobs></AddJobs>
+        element: <PrivateRoute><AddJobs></AddJobs></PrivateRoute>,
         
       },
       {
@@ -46,13 +47,13 @@ const router = createBrowserRouter([
       },
       {
         path:'/mypostedjobs',
-        element: <MyPostedJobs></MyPostedJobs>,
+        element: <PrivateRoute><MyPostedJobs></MyPostedJobs></PrivateRoute>,
         loader: () =>fetch('https://web-pro-matcher-server.vercel.app/addJobs_own')
 
       },
       {
         path: '/mybids',
-        element: <MyBids></MyBids>,
+        element: <PrivateRoute><MyBids></MyBids></PrivateRoute>,
         loader: () =>fetch ('https://web-pro-matcher-server.vercel.app/bid')
         
       },
@@ -64,7 +65,7 @@ const router = createBrowserRouter([
       },
       {
         path: '/details/:id',
-        element: <Details></Details>,
+        element: <PrivateRoute><Details></Details></PrivateRoute>,
         loader: ({params}) =>fetch(`https://web-pro-matcher-server.vercel.app/addJobs/${params.id}`)
         
       },
