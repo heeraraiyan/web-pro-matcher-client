@@ -25,7 +25,7 @@ const Latest = () => {
 </div>
 
 <div className="card w-96 bg-base-100 shadow-xl">
-  <figure><img src="https://i.ibb.co/tDnctLn/pexels-yan-krukau-7793691.jpg" alt="" /></figure>
+  <figure><img src="https://i.ibb.co/Z28RmK4/pexels-anna-nekrashevich-6801633.jpg" alt="" /></figure>
   <div className="card-body">
     <h2 className="card-title">
       Digital Marketing
@@ -48,7 +48,7 @@ The Unusual!</p>
 
 
 <div className="card w-96 bg-base-100 shadow-xl">
-  <figure><img src="https://i.ibb.co/tDnctLn/pexels-yan-krukau-7793691.jpg" alt="" /></figure>
+  <figure><img src="https://i.ibb.co/B32wmnS/pexels-kampus-production-5940841.jpg" alt="" /></figure>
   <div className="card-body">
     <h2 className="card-title">
     Graphics Design
