@@ -1,10 +1,17 @@
 import Swal from 'sweetalert2'
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
+import { AuthContext } from '../provider/AuthProvider';
+import { useContext } from 'react';
 
 const AddJobs = () => {
+
+  const { user } = useContext(AuthContext);
+    const userEmail = user.email;
+
     const handleAddjobs = event => {
         event.preventDefault();
+
     
         const form = event.target;
         
@@ -15,7 +22,7 @@ const AddJobs = () => {
         const price_range = form.price_range.value;
          const short_description = form.short_description.value;
     
-        const newJobs = {category,job_title,deadline,price_range,short_description}
+        const newJobs = {category,job_title,deadline,price_range,short_description,email: userEmail}
     
         console.log(newJobs)
     
